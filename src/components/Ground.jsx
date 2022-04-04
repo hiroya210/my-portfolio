@@ -1,7 +1,8 @@
 import React from 'react'
+import pokemon_bg from '../images/pokemon_bg.png'
 
 export const Ground = () => {
   return (
-    <h1>Im groundss</h1>
+    <img src={pokemon_bg} alt="pokemon" />
   )
 }
