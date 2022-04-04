@@ -5,9 +5,13 @@ import { Title } from "./components/Title";
 const App = () => {
   return (
     <>
-    <div className="d-flex justify-content-center align-items-center">
-      <Title />
-      <Ground />
+    <div>
+      <div>
+        <Title />
+      </div>
+      <div className="d-flex justify-content-center">
+        <Ground />
+      </div>
     </div>
     </>
   );

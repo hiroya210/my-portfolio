@@ -1,8 +1,14 @@
 import React from 'react'
-import pokemon_bg from '../images/pokemon_bg.png'
+import grass from '../images/grass.png'
 
 export const Ground = () => {
   return (
-    <img src={pokemon_bg} alt="pokemon" />
+    <img style={grassStyle} src={grass} alt="grass.png" />
   )
+}
+
+const grassStyle = {
+  width: '100%',
+  height: '300px',
+  filter: 'grayScale(50%)' 
 }
