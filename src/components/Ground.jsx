@@ -10,7 +10,7 @@ export const Ground = () => {
 }
 
 const grassStyle = {
-  height: '300px',
+  height: '20vh',
   filter: 'grayScale(50%)',
   width: '400%',
   position: 'absolute',

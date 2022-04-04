@@ -9,7 +9,7 @@ const App = () => {
       {/* <div className="text-center py-5">
         <Title />
       </div> */}
-      <div style={outerStyle} className="d-flex justify-content-center">
+      <div style={outerStyle}>
         <Ground />
       </div>
     </div>
