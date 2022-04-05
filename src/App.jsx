@@ -6,9 +6,6 @@ const App = () => {
   return (
     <>
     <div>
-      {/* <div className="text-center py-5">
-        <Title />
-      </div> */}
       <div style={outerStyle}>
         <Ground />
       </div>
@@ -28,5 +25,6 @@ const outerStyle = {
   overflowX: "hidden",
   position: "absolute",
 }
+
 
 export default App;
