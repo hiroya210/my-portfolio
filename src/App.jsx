@@ -1,11 +1,11 @@
-import { Ground } from "./components/Ground";
+import { ParallaxBg } from "./components/ParallaxBg";
 import { Title } from "./components/Title";
 
 
 const App = () => {
   return (
     <>
-      <Ground />
+      <ParallaxBg />
     </>
   );
 }
