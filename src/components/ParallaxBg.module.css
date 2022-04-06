@@ -11,3 +11,11 @@
     background-repeat: repeat-x;
     height: 100vh;
   }
+
+.clouds{
+    animation: move 200s linear infinite;
+}
+@keyframes move {
+    0% { background-position: 0; }
+    100% { background-position: -1400px; }
+}

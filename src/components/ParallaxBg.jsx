@@ -13,27 +13,27 @@ export const ParallaxBg = () => {
   const target = useRef(null);
 
   const layerFour = useParallax({
-    speed: 12,
+    speed: 5,
     targetElement: target.current,
   });
 
   const layerThree = useParallax({
-    speed: 25,
+    speed: 12,
     targetElement: target.current,
   });
 
   const layerTwo = useParallax({
-    speed: 50,
+    speed: 75,
     targetElement: target.current,
   });
   const layerOne = useParallax({
     speed: 100,
     targetElement: target.current,
   });
-  const layerFourExtend = 12 * 5 * -1;
-  const layerThreeExtend = 25 * 5 * -1;
-  const layerTwoExtend = 50 * 5 * -1;
-  const layerOneExtend = 200 * 5 * -1;
+  const layerFourExtend = 5 * 5 * -1;
+  const layerThreeExtend = 12 * 5 * -1;
+  const layerTwoExtend = 75 * 5 * -1;
+  const layerOneExtend = 100 * 5 * -1;
  
   return (
     <div className={styles.root} ref={target}>
@@ -58,7 +58,7 @@ export const ParallaxBg = () => {
       {/* LAYER 4 */}
       <div
         ref={layerFour.ref}
-        className={styles.layer} 
+        className={`${styles.layer} ${styles.clouds}`} 
         style={{
           backgroundImage: `url(${layer_4})`,
           left: layerFourExtend,
