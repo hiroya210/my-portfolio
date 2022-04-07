@@ -1,4 +1,5 @@
 import React, {useRef} from 'react'
+import { Title } from './Title';
 import { useParallax } from 'react-scroll-parallax';
 import layer_1 from "../images/layer_1.png";
 import layer_2 from "../images/layer_2.png";
@@ -46,6 +47,7 @@ export const ParallaxBg = () => {
           right: 0
         }}/>
 
+
       {/* LAYER 5 */}  
       <div 
         className={styles.layer}
@@ -74,7 +76,7 @@ export const ParallaxBg = () => {
           left: layerThreeExtend,
           right: layerThreeExtend,
         }}/>
-
+<Title />
       {/* LAYER 2 */}
       <div 
         ref={layerTwo.ref} 
