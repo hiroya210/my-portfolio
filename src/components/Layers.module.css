@@ -1,35 +1,57 @@
-.wrapper{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-}
-
-
-.innerWrapper{
-    perspective: 10px;
-}
-
 .layersContainer{
-    transform: preserve-3d;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
+    width: 100vw;
+    height: 100vh;
 }
 
 .layers{
     position: absolute;
-    background-size: auto 100%;
-    width: 400vw;
+    background-size: 100% 100vh;
+    width: 100vw;
     height: 100vh;
     background-repeat: repeat-x;
 }
 
-.farthest{
-    transform: translateZ(-10px);
+.layerOne{
+    animation: move 5s linear infinite;
+}
+
+.layerTwo{
+    animation: move 8s linear infinite;
+}
+
+.layerThree{
+    animation: move 16s linear infinite;
+}
+
+.layerFour{
+    animation: move 32s linear infinite;
+}
+
+.layerFive{
+    animation: move 64s linear infinite;
+}
+
+@keyframes move{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -100vw 0;
+    }
+}
+
+@media (max-width: 540px){
+    .layers{
+        background-size: 400vw 100%;
+    }
+
+    @keyframes move{
+        from{
+            background-position: 0 0;
+        }
+        to{
+            background-position: -400vw 0;
+        }
+    }
 }
