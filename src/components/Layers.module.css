@@ -1,0 +1,35 @@
+.wrapper{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+
+.innerWrapper{
+    perspective: 10px;
+}
+
+.layersContainer{
+    transform: preserve-3d;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.layers{
+    position: absolute;
+    background-size: auto 100%;
+    width: 400vw;
+    height: 100vh;
+    background-repeat: repeat-x;
+}
+
+.farthest{
+    transform: translateZ(-10px);
+}
