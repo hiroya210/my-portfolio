@@ -17,8 +17,11 @@ export const Layers = () => {
         <div  className={`${styles.layers} ${styles.layerFive}`} style={{backgroundImage: `url(${layer5})`}} />
         <div  className={`${styles.layers} ${styles.layerFour}`} style={{backgroundImage: `url(${layer4})`}} />
         <div  className={`${styles.layers} ${styles.layerThree}`} style={{backgroundImage: `url(${layer3})`}} />
+        <Title />
         <div  className={`${styles.layers} ${styles.layerTwo}`} style={{backgroundImage: `url(${layer2})`}} />
+
         <Car />
+
         <div  className={`${styles.layers} ${styles.layerOne}`} style={{backgroundImage: `url(${layer1})`}} />
 
 
