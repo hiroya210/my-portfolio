@@ -32,6 +32,14 @@
     animation: move 64s linear infinite;
 }
 
+.sky{
+    position: absolute;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: repeat-x;
+}
+
 @keyframes move{
     from{
         background-position: 0 0;

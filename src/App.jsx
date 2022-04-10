@@ -4,7 +4,9 @@ import { Title } from "./components/Title";
 
 const App = () => {
   return (
-    <Layers />
+    <>
+      <Layers />
+    </>
   )
 }
 
