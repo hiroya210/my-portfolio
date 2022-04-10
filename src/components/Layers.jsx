@@ -6,7 +6,7 @@ import layer2 from "../images/layer2.png";
 import layer3 from "../images/layer3.png";
 import layer4 from "../images/layer4.png";
 import layer5 from "../images/layer5.png";
-import styles from "./Layers.module.css";
+import styles from "./styles/Layers.module.css";
 
 export const Layers = () => {
 
@@ -16,8 +16,8 @@ export const Layers = () => {
         <div  className={`${styles.sky}`} style={{backgroundImage: `url(${sky})`}} />
         <div  className={`${styles.layers} ${styles.layerFive}`} style={{backgroundImage: `url(${layer5})`}} />
         <div  className={`${styles.layers} ${styles.layerFour}`} style={{backgroundImage: `url(${layer4})`}} />
-        <div  className={`${styles.layers} ${styles.layerThree}`} style={{backgroundImage: `url(${layer3})`}} />
         <Title />
+        <div  className={`${styles.layers} ${styles.layerThree}`} style={{backgroundImage: `url(${layer3})`}} />
         <div  className={`${styles.layers} ${styles.layerTwo}`} style={{backgroundImage: `url(${layer2})`}} />
 
         <Car />

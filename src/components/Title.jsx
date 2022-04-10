@@ -1,8 +1,11 @@
 import React from 'react'
-import styles from './Title.module.css'
+import styles from './styles/Title.module.css'
 
 export const Title = () => {
   return (
-    <h1 className={styles.title}>Hi! I'm Hiro</h1>
+    <div className={styles.title}>
+      <h1>My name is Hiro</h1>
+      <p>I'm a Frontend Developer</p>
+    </div>
   )
 }
