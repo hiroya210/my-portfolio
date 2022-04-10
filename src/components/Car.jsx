@@ -14,6 +14,7 @@ export const Car = () => {
             <div className={`${styles.wheels} ${styles.carWheel2}`}>
                 <img src={carwheel} alt="carwheel" width={"50px"}/>
             </div>
+            <div className={styles.shadow}/>
         </div>
 
       </>

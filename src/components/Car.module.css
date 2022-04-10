@@ -22,6 +22,16 @@
 
 }
 
+.shadow{
+    position: absolute;
+    height: 32px;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: -25%;
+    opacity: 0.3;
+    width: 300px;
+    background-color: black;
+}
 
 @keyframes spin{
     from{
