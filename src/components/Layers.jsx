@@ -1,3 +1,4 @@
+import React from 'react';
 import { Title } from './Title';
 import { Car } from './Car';
 import sky from "../images/sky.png";

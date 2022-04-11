@@ -1,8 +1,9 @@
+
 .carBody{
     position: absolute;
     bottom: 24%;
     left: 5%;
-    animation: bounce 0.5s infinite;
+    animation: bounce 0.3s infinite;
 }
 
 .wheels{
