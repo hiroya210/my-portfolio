@@ -2,11 +2,12 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    background-color: black;
 }
 
 .layers{
     position: absolute;
-    background-size: 100% 100vh;
+    background-size: 100% 80vh;
     width: 100vw;
     height: 100vh;
     background-repeat: repeat-x;
@@ -36,7 +37,7 @@
     position: absolute;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-repeat: repeat-x;
 }
 
@@ -51,7 +52,11 @@
 
 @media (max-width: 540px){
     .layers{
-        background-size: 400vw 100%;
+        background-size: 400vw 80%;
+    }
+
+    .sky{
+        background-position-x: center;
     }
 
     @keyframes move{

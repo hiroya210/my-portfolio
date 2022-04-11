@@ -1,6 +1,6 @@
 .carBody{
     position: absolute;
-    bottom: 5%;
+    bottom: 24%;
     left: 5%;
     animation: bounce 0.5s infinite;
 }
