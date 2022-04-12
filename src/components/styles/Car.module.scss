@@ -1,14 +1,20 @@
+@import "./_variables.module.scss";
+
 
 .carBody{
     position: absolute;
     bottom: 24%;
     left: 5%;
-    animation: bounce 0.3s infinite;
+    animation: bounce 0.5s/$carSpeed infinite;
 }
 
 .wheels{
     position: absolute;
-    animation: spin 2s linear infinite;
+    animation: spin 2s/$carSpeed linear infinite;
+}
+
+.accelerator{
+    animation-duration: 1s/$carSpeed;
 }
 
 .carWheel1{

@@ -1,3 +1,5 @@
+@import "./_variables.module.scss";
+
 .layersContainer{
     position: relative;
     width: 100vw;
@@ -11,27 +13,35 @@
     width: 100vw;
     height: 100vh;
     background-repeat: repeat-x;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .layerOne{
-    animation: move 5s linear infinite;
+    animation-duration: 4s/$layerSpeed;
+
+    .speedUp{
+        animation-duration: 2s/$layerSpeed;
+    }
 }
 
 .layerTwo{
-    animation: move 8s linear infinite;
+    animation-duration: 8s/$layerSpeed; 
 }
 
 .layerThree{
-    animation: move 16s linear infinite;
+    animation-duration: 16s/$layerSpeed;
 }
 
 .layerFour{
-    animation: move 32s linear infinite;
+    animation-duration: 32s/$layerSpeed;
 }
 
 .layerFive{
-    animation: move 64s linear infinite;
+    animation-duration: 64s/$layerSpeed;
 }
+
 
 .sky{
     position: absolute;

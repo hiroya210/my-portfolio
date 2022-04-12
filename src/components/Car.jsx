@@ -1,7 +1,7 @@
 import React from 'react'
 import car from '../images/car.png'
 import carwheel from '../images/carwheel.png'
-import styles from './styles/Car.module.css'
+import styles from './styles/Car.module.scss'
 
 export const Car = () => {
   return (
