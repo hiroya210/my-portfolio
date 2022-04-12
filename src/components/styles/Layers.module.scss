@@ -20,14 +20,10 @@
 
 .layerOne{
     animation-duration: 4s/$layerSpeed;
-
-    .speedUp{
-        animation-duration: 2s/$layerSpeed;
-    }
 }
 
 .layerTwo{
-    animation-duration: 8s/$layerSpeed; 
+    animation-duration: 8s/$layerSpeed;
 }
 
 .layerThree{
@@ -41,6 +37,29 @@
 .layerFive{
     animation-duration: 64s/$layerSpeed;
 }
+
+//Accelerate the layers
+
+.speedUpOne{
+    animation-duration: 2s/$layerSpeed;
+}
+
+.speedUpTwo{
+    animation-duration: 4s/$layerSpeed;
+}
+
+.speedUpThree{
+    animation-duration: 8s/$layerSpeed;
+}
+
+.speedUpFour{
+    animation-duration: 16s/$layerSpeed;
+}
+
+.speedUpFive{
+    animation-duration: 32s/$layerSpeed;
+}
+
 
 
 .sky{

@@ -20,18 +20,40 @@ export const Layers = () => {
     <div className={styles.innerWrapper}>
       <div className={styles.layersContainer} >
         <div  className={`${styles.sky}`} style={{backgroundImage: `url(${sky})`}} />
-        <div  className={`${styles.layers} ${styles.layerFive}`} style={{backgroundImage: `url(${layer5})`}} />
-        <div  className={`${styles.layers} ${styles.layerFour}`} style={{backgroundImage: `url(${layer4})`}} />
+
+        {/* LAYER 5 */}
+        <div  
+          className={`${styles.layers} ${speedUp ? styles.speedUpFive : styles.layerFive}`} 
+          style={{backgroundImage: `url(${layer5})`}} />
+
+        {/* LAYER 4 */}
+        <div  
+          className={`${styles.layers} ${speedUp ? styles.speedUpFour : styles.layerFour}`} 
+          style={{backgroundImage: `url(${layer4})`}} />
+        
+        
         <Title />
+
         <div onClick={handleSpeedClick}>
           <Shifter/>
         </div>
-        <div  className={`${styles.layers} ${styles.layerThree}`} style={{backgroundImage: `url(${layer3})`}} />
-        <div  className={`${styles.layers} ${styles.layerTwo}`} style={{backgroundImage: `url(${layer2})`}} />
+
+        {/* LAYER 3 */}
+        <div  
+          className={`${styles.layers} ${speedUp ? styles.speedUpThree : styles.layerThree}`} 
+          style={{backgroundImage: `url(${layer3})`}} />
+
+        {/* LAYER 2 */}
+        <div  
+          className={`${styles.layers} ${speedUp ? styles.speedUpTwo : styles.layerTwo}`} 
+          style={{backgroundImage: `url(${layer2})`}} />
 
         <Car />
 
-        <div  className={`${styles.layers} ${styles.layerOne} ${speedUp ? styles.speedUp : ""}`} style={{backgroundImage: `url(${layer1})`}} />
+        {/* LAYER 1 */}
+        <div  
+          className={`${styles.layers} ${speedUp ? styles.speedUpOne : styles.layerOne}`} 
+          style={{backgroundImage: `url(${layer1})`}} />
 
 
       </div>
